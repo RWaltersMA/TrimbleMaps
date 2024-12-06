@@ -7,7 +7,7 @@ https://developer.trimblemaps.com/restful-apis/developer-guide/introduction/
 
 
 ```
-query ByAddress($address: String!, $city: String!, $state: String!) {
+query locationByAddress($address: String!, $city: String!, $state: String!) {
   ByAddress(address: $address, city: $city, state: $state) {
     Lat
     Lon
@@ -36,7 +36,7 @@ Returns:
 ## Query By Lat/Long coordinates
 
 ```
-query ByGeo($lat: String!, $long: String!) {
+query addressByGeo($lat: String!, $long: String!) {
   ByGeo(lat: $lat, long: $long) {
     Address
     Timezone
